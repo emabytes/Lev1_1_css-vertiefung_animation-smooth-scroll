@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    height: 100vh;
+    font-size: 1.5em;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+#first {
+    background: rgb(187, 224, 247);
+}
+
+#second {
+    background: rgb(252, 225, 249);
+}
+
+#third {
+    background: rgb(255, 171, 171)
+}
+
+div {
+    position: relative;
+    transition: 1s ease-in;
+}
+
+div i {
+    font-size: 2em;
+    position: absolute;
+    animation-name: top-bottom-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    top: 0;
+}
+
+@keyframes top-bottom-animation {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 25px;
+        opacity: 0.1;
+    }
+    100% {
+        top: 0;
+    }
+}
